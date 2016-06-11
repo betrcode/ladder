@@ -8,7 +8,9 @@ import java.util.Map.Entry;
 import java.util.Scanner;
 
 /**
- * Takes a roof height and a ladder angle and calculates the needed length of the ladder to reach the roof.
+ * Takes a roof height and a ladder angle from standard input, on a single line
+ * and calculates the needed length of the ladder to reach the roof and prints the result
+ * to standard out.
  */
 public class LadderApplication {
   public static void main(String[] args) {
@@ -27,7 +29,7 @@ public class LadderApplication {
   }
 
   /**
-   * Reads input from System.in
+   * Reads input from provided reader.
    * Note: No error handling. Assumes two integers separated by space. Will crash on other values.
    */
   private static Entry<Integer, Integer> readInput(BufferedReader reader) {

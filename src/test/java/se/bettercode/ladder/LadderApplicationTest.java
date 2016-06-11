@@ -25,6 +25,11 @@ public class LadderApplicationTest {
     runMainWithInputAndAssertOutput("2000 70", "2129\n");
   }
 
+  @Test(expected = NumberFormatException.class)
+  public void invalidInput() {
+    runMainWithInputAndAssertOutput("500 70asd", "");
+  }
+
   private void runMainWithInputAndAssertOutput(String input, String expectedOutput) {
     out.reset();
     BufferedReader in = new BufferedReader(new StringReader(input));
